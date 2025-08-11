@@ -2,6 +2,7 @@ import { Card } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
 import { Heart, Star } from "lucide-react";
 import { Button } from "@/components/ui/button";
+import { useTranslation } from 'react-i18next';
 
 interface ListingCardProps {
   id: string;
@@ -27,6 +28,8 @@ const ListingCard = ({
   features = [],
   isFavorite = false,
 }: ListingCardProps) => {
+  const { t } = useTranslation();
+  
   return (
     <Card className="group overflow-hidden border-0 shadow-card hover:shadow-card-hover transition-all duration-300 cursor-pointer">
       <div className="relative">
@@ -85,7 +88,7 @@ const ListingCard = ({
           <div>
             <span className="text-lg font-semibold">${price}</span>
             <span className="text-muted-foreground text-sm">
-              {type === "stay" ? " / night" : " / day"}
+              {type === "stay" ? ` / ${t('listing.night')}` : ` / day`}
             </span>
           </div>
         </div>

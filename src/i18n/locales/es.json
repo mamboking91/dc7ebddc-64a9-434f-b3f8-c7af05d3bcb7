@@ -1,0 +1,59 @@
+{
+  "header": {
+    "brand": "StayDrive",
+    "placesToStay": "Lugares para quedarse",
+    "vehicles": "Vehículos",
+    "experiences": "Experiencias",
+    "becomeHost": "Conviértete en anfitrión"
+  },
+  "hero": {
+    "title": "Tu viaje perfecto te espera",
+    "subtitle": "Reserva lugares únicos para quedarte y vehículos increíbles para conducir, todo en una plataforma"
+  },
+  "search": {
+    "where": "¿Dónde?",
+    "checkIn": "Llegada",
+    "checkOut": "Salida",
+    "guests": "Huéspedes",
+    "search": "Buscar",
+    "addDates": "Agregar fechas",
+    "addGuests": "Agregar huéspedes"
+  },
+  "categories": {
+    "houses": "Casas",
+    "cars": "Coches",
+    "camping": "Camping",
+    "boats": "Barcos",
+    "cabins": "Cabañas",
+    "unique": "Únicos"
+  },
+  "listing": {
+    "night": "noche",
+    "rating": "valoración"
+  },
+  "footer": {
+    "company": "Empresa",
+    "aboutUs": "Acerca de nosotros",
+    "careers": "Carreras",
+    "newsroom": "Sala de prensa",
+    "community": "Comunidad",
+    "blog": "Blog",
+    "helpCenter": "Centro de ayuda",
+    "host": "Anfitrión",
+    "hostYourHome": "Alquila tu casa",
+    "hostOnlineExperience": "Organiza una experiencia online",
+    "hostExperience": "Organiza una experiencia",
+    "responsibleHosting": "Hosting responsable",
+    "support": "Soporte",
+    "helpCenter2": "Centro de ayuda",
+    "safetyInformation": "Información de seguridad",
+    "cancellationOptions": "Opciones de cancelación",
+    "ourCommunityPolicies": "Nuestra respuesta al COVID-19",
+    "allRightsReserved": "Todos los derechos reservados"
+  },
+  "language": {
+    "english": "English",
+    "spanish": "Español",
+    "german": "Deutsch"
+  }
+}

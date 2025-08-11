@@ -1,0 +1,59 @@
+{
+  "header": {
+    "brand": "StayDrive",
+    "placesToStay": "Unterkünfte",
+    "vehicles": "Fahrzeuge",
+    "experiences": "Erlebnisse",
+    "becomeHost": "Gastgeber werden"
+  },
+  "hero": {
+    "title": "Ihre perfekte Reise wartet auf Sie",
+    "subtitle": "Buchen Sie einzigartige Unterkünfte und fantastische Fahrzeuge, alles auf einer Plattform"
+  },
+  "search": {
+    "where": "Wo",
+    "checkIn": "Anreise",
+    "checkOut": "Abreise",
+    "guests": "Gäste",
+    "search": "Suchen",
+    "addDates": "Daten hinzufügen",
+    "addGuests": "Gäste hinzufügen"
+  },
+  "categories": {
+    "houses": "Häuser",
+    "cars": "Autos",
+    "camping": "Camping",
+    "boats": "Boote",
+    "cabins": "Hütten",
+    "unique": "Einzigartig"
+  },
+  "listing": {
+    "night": "Nacht",
+    "rating": "Bewertung"
+  },
+  "footer": {
+    "company": "Unternehmen",
+    "aboutUs": "Über uns",
+    "careers": "Karriere",
+    "newsroom": "Newsroom",
+    "community": "Community",
+    "blog": "Blog",
+    "helpCenter": "Hilfe-Center",
+    "host": "Gastgeber",
+    "hostYourHome": "Vermieten Sie Ihr Zuhause",
+    "hostOnlineExperience": "Online-Erlebnis anbieten",
+    "hostExperience": "Erlebnis anbieten",
+    "responsibleHosting": "Verantwortungsvolles Gastgeben",
+    "support": "Support",
+    "helpCenter2": "Hilfe-Center",
+    "safetyInformation": "Sicherheitsinformationen",
+    "cancellationOptions": "Stornierungsoptionen",
+    "ourCommunityPolicies": "Unsere COVID-19-Maßnahmen",
+    "allRightsReserved": "Alle Rechte vorbehalten"
+  },
+  "language": {
+    "english": "English",
+    "spanish": "Español",
+    "german": "Deutsch"
+  }
+}

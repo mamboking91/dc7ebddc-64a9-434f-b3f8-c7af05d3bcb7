@@ -1,16 +1,19 @@
 import { Button } from "@/components/ui/button";
 import { Home, Car, Tent, Ship, Mountain, Plane } from "lucide-react";
-
-const categories = [
-  { icon: Home, label: "Houses", active: true },
-  { icon: Car, label: "Cars", active: false },
-  { icon: Tent, label: "Camping", active: false },
-  { icon: Ship, label: "Boats", active: false },
-  { icon: Mountain, label: "Cabins", active: false },
-  { icon: Plane, label: "Unique", active: false },
-];
+import { useTranslation } from 'react-i18next';
 
 const CategoryTabs = () => {
+  const { t } = useTranslation();
+  
+  const categories = [
+    { icon: Home, labelKey: "categories.houses", active: true },
+    { icon: Car, labelKey: "categories.cars", active: false },
+    { icon: Tent, labelKey: "categories.camping", active: false },
+    { icon: Ship, labelKey: "categories.boats", active: false },
+    { icon: Mountain, labelKey: "categories.cabins", active: false },
+    { icon: Plane, labelKey: "categories.unique", active: false },
+  ];
+
   return (
     <div className="border-b border-border">
       <div className="container mx-auto px-4">
@@ -19,7 +22,7 @@ const CategoryTabs = () => {
             const Icon = category.icon;
             return (
               <Button
-                key={category.label}
+                key={category.labelKey}
                 variant="ghost"
                 className={`flex flex-col gap-2 h-auto py-3 px-4 min-w-[80px] ${
                   category.active
@@ -28,7 +31,7 @@ const CategoryTabs = () => {
                 }`}
               >
                 <Icon className="h-6 w-6" />
-                <span className="text-xs font-medium">{category.label}</span>
+                <span className="text-xs font-medium">{t(category.labelKey)}</span>
               </Button>
             );
           })}

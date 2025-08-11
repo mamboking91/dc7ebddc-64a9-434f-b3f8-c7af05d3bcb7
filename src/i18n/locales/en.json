@@ -1,0 +1,59 @@
+{
+  "header": {
+    "brand": "StayDrive",
+    "placesToStay": "Places to stay",
+    "vehicles": "Vehicles",
+    "experiences": "Experiences",
+    "becomeHost": "Become a host"
+  },
+  "hero": {
+    "title": "Your perfect trip awaits",
+    "subtitle": "Book unique places to stay and amazing vehicles to drive, all in one platform"
+  },
+  "search": {
+    "where": "Where",
+    "checkIn": "Check in",
+    "checkOut": "Check out",
+    "guests": "Guests",
+    "search": "Search",
+    "addDates": "Add dates",
+    "addGuests": "Add guests"
+  },
+  "categories": {
+    "houses": "Houses",
+    "cars": "Cars",
+    "camping": "Camping",
+    "boats": "Boats",
+    "cabins": "Cabins",
+    "unique": "Unique"
+  },
+  "listing": {
+    "night": "night",
+    "rating": "rating"
+  },
+  "footer": {
+    "company": "Company",
+    "aboutUs": "About Us",
+    "careers": "Careers",
+    "newsroom": "Newsroom",
+    "community": "Community",
+    "blog": "Blog",
+    "helpCenter": "Help Center",
+    "host": "Host",
+    "hostYourHome": "Host your home",
+    "hostOnlineExperience": "Host an online experience",
+    "hostExperience": "Host an experience",
+    "responsibleHosting": "Responsible hosting",
+    "support": "Support",
+    "helpCenter2": "Help Center",
+    "safetyInformation": "Safety information",
+    "cancellationOptions": "Cancellation options",
+    "ourCommunityPolicies": "Our COVID-19 response",
+    "allRightsReserved": "All rights reserved"
+  },
+  "language": {
+    "english": "English",
+    "spanish": "Español",
+    "german": "Deutsch"
+  }
+}

@@ -6,8 +6,10 @@ import { Select, SelectContent, SelectItem, SelectTrigger, SelectValue } from "@
 import { Search, MapPin, Calendar as CalendarIcon } from "lucide-react";
 import { useState } from "react";
 import { format } from "date-fns";
+import { useTranslation } from 'react-i18next';
 
 const SearchBar = () => {
+  const { t } = useTranslation();
   const [checkIn, setCheckIn] = useState<Date>();
   const [checkOut, setCheckOut] = useState<Date>();
 
@@ -16,7 +18,7 @@ const SearchBar = () => {
       <div className="flex-1 flex flex-col md:flex-row">
         <div className="flex-1 px-6 py-4 border-r border-border">
           <label className="text-xs font-medium text-muted-foreground uppercase tracking-wide">
-            Where
+            {t('search.where')}
           </label>
           <div className="flex items-center gap-2 mt-1">
             <MapPin className="h-4 w-4 text-muted-foreground" />
@@ -29,7 +31,7 @@ const SearchBar = () => {
         
         <div className="px-6 py-4 border-r border-border">
           <label className="text-xs font-medium text-muted-foreground uppercase tracking-wide">
-            Check in
+            {t('search.checkIn')}
           </label>
           <Popover>
             <PopoverTrigger asChild>
@@ -38,7 +40,7 @@ const SearchBar = () => {
                 className="p-0 h-auto justify-start font-normal text-base hover:bg-transparent"
               >
                 <CalendarIcon className="h-4 w-4 mr-2 text-muted-foreground" />
-                {checkIn ? format(checkIn, "MMM dd") : "Add dates"}
+                {checkIn ? format(checkIn, "MMM dd") : t('search.addDates')}
               </Button>
             </PopoverTrigger>
             <PopoverContent className="w-auto p-0" align="start">
@@ -54,7 +56,7 @@ const SearchBar = () => {
         
         <div className="px-6 py-4 border-r border-border">
           <label className="text-xs font-medium text-muted-foreground uppercase tracking-wide">
-            Check out
+            {t('search.checkOut')}
           </label>
           <Popover>
             <PopoverTrigger asChild>
@@ -63,7 +65,7 @@ const SearchBar = () => {
                 className="p-0 h-auto justify-start font-normal text-base hover:bg-transparent"
               >
                 <CalendarIcon className="h-4 w-4 mr-2 text-muted-foreground" />
-                {checkOut ? format(checkOut, "MMM dd") : "Add dates"}
+                {checkOut ? format(checkOut, "MMM dd") : t('search.addDates')}
               </Button>
             </PopoverTrigger>
             <PopoverContent className="w-auto p-0" align="start">
@@ -96,7 +98,7 @@ const SearchBar = () => {
       
       <Button size="lg" className="rounded-full px-8 py-4 bg-primary hover:bg-primary/90">
         <Search className="h-4 w-4 mr-2" />
-        Search
+        {t('search.search')}
       </Button>
     </div>
   );

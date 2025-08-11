@@ -1,8 +1,11 @@
 import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
 import { Facebook, Twitter, Instagram, Youtube } from "lucide-react";
+import { useTranslation } from 'react-i18next';
 
 const Footer = () => {
+  const { t } = useTranslation();
+  
   return (
     <footer className="bg-muted/30 border-t border-border">
       <div className="container mx-auto px-4 py-12">
@@ -29,16 +32,16 @@ const Footer = () => {
           </div>
           
           <div className="space-y-4">
-            <h4 className="font-semibold">Support</h4>
+            <h4 className="font-semibold">{t('footer.support')}</h4>
             <div className="space-y-2">
               <a href="#" className="block text-muted-foreground hover:text-foreground transition-colors">
-                Help Center
+                {t('footer.helpCenter')}
               </a>
               <a href="#" className="block text-muted-foreground hover:text-foreground transition-colors">
-                Safety information
+                {t('footer.safetyInformation')}
               </a>
               <a href="#" className="block text-muted-foreground hover:text-foreground transition-colors">
-                Cancellation options
+                {t('footer.cancellationOptions')}
               </a>
               <a href="#" className="block text-muted-foreground hover:text-foreground transition-colors">
                 Report issues
@@ -47,7 +50,7 @@ const Footer = () => {
           </div>
           
           <div className="space-y-4">
-            <h4 className="font-semibold">Host</h4>
+            <h4 className="font-semibold">{t('footer.host')}</h4>
             <div className="space-y-2">
               <a href="#" className="block text-muted-foreground hover:text-foreground transition-colors">
                 List your property
@@ -78,7 +81,7 @@ const Footer = () => {
         
         <div className="border-t border-border mt-8 pt-8 flex flex-col md:flex-row justify-between items-center">
           <p className="text-muted-foreground text-sm">
-            © 2024 StayDrive. All rights reserved.
+            © 2024 StayDrive. {t('footer.allRightsReserved')}
           </p>
           <div className="flex space-x-6 mt-4 md:mt-0">
             <a href="#" className="text-muted-foreground hover:text-foreground text-sm transition-colors">
